@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        android:title="@string/connected"
+        android:iconSpaceReserved="false"
+        android:key="connected" />
+
+    <PreferenceCategory
+        android:title="@string/led">
+
+        <SwitchPreference
+            android:title="@string/led_state"
+            android:iconSpaceReserved="false"
+            android:key="led_state"
+            />
+
+        <Preference
+            android:title="@string/read_sensor"
+            android:iconSpaceReserved="false"
+            android:key="read_sensors"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/motors">
+
+        <com.pavelsikun.seekbarpreference.SeekBarPreferenceCompat
+            android:title="@string/motor_1"
+            android:key="motor_1"
+            android:defaultValue="92"
+            android:persistent="false"
+            app:msbp_minValue="74"
+            app:msbp_maxValue="114"
+            />
+
+        <com.pavelsikun.seekbarpreference.SeekBarPreferenceCompat
+            android:title="@string/motor_2"
+            android:key="motor_2"
+            android:defaultValue="92"
+            android:persistent="false"
+            app:msbp_minValue="76"
+            app:msbp_maxValue="112"
+            />
+
+        <com.pavelsikun.seekbarpreference.SeekBarPreferenceCompat
+            android:title="@string/turn_delay"
+            android:key="turn_delay"
+            android:defaultValue="240"
+            android:persistent="false"
+            app:msbp_minValue="0"
+            app:msbp_maxValue="5000"
+            />
+
+        <Preference
+            android:title="@string/challenge"
+            android:key="run_challenge"
+            />
+
+        <Preference
+            android:title="@string/run_nascar"
+            android:key="run_nascar"
+            />
+
+        <Preference
+            android:title="@string/apply"
+            android:key="apply"
+            />
+
+        <Preference
+            android:title="@string/stop"
+            android:key="stop"
+            />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

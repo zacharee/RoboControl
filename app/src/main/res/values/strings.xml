@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">RoboControl</string>
+
+    <string name="led">LED</string>
+    <string name="led_state">LED State</string>
+    <string name="motors">Motors</string>
+    <string name="motor_1">Motor 1</string>
+    <string name="motor_2">Motor 2</string>
+    <string name="connected">Connected</string>
+    <string name="read_sensor">Read Sensors</string>
+    <string name="apply">Apply</string>
+    <string name="stop">Stop</string>
+
+    <string name="run_nascar">Run NASCAR®</string>
+    <string name="turn_delay">Turn Delay</string>
+    <string name="challenge">Run Challenge</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
